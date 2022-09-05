@@ -65,7 +65,7 @@ begin
 					if(para_girisi = '1') then
 						state 		<= PARA_GIRIS ;
 						toplam_para 	<= toplam_para + para_miktar ;
-					else -- Para giriþi durduysa
+					else
 						if (toplam_para >= fiyat) then
 							state <= URUN_TESLIM ;											
 						else	
